@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinhas de Rua - Cadastrar</title>
+	<link rel = "icon" href = "/static/img/punho-soco.png">
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <body class = "imagem-fundo">
+	<form class = "conta" action = "/cadastrarUsuario" method = "POST"> <br>
+		<h1> Criar conta Rinhas de Rua </h1><br>
+		<center> <hr width = "90%" align = "center" size = "3" color = "#4169E1"> </center><br>
+		<img class = "itens" src = "/static/img/conta_logo.png" alt = "Criar Conta" width = "25"> <span> Conta </span> <img> <br> <br>
+		<img src = "/static/img/conta_icone.png" width = "20"> Conta <input type = "text" name = "contaUsuario" required autofocus> <br>
+		<img src = "/static/img/email_icone.png" width = "20"> Email <input type = "email" name = "emailUsuario" required autofocus> <br>
+		<img src = "/static/img/senha_icone.png" width = "20"> Senha <input type = "password" name = "senhaUsuario" required autofocus required maxlenght = "10"> <br>
+		<img src = "/static/img/senha_icone.png" width = "20"> Senha <input type = "password" name = "confirmarsenha" required autofocus required maxlength = "10"> <br><br>
+		<center> <hr width = "90%" align = "center" size = "3" color = "#4169E1"> </center>  <br> 
+
+
+		<div class = "personagem">
+			<img class = "itens" src = "/static/img/lutador2.png" alt = "Criar Conta" width = "25"> <span> Personagem </span> <img> <br> <br>
+			<img src = "/static/img/nome_icone.png" width = "20"> Nome do Jogador <input type = "text" name = "nomeUsuario" required autofocus> <br><br>
+			<img src = "/static/img/genero_icone.png" width = "20"> Gênero
+			 <input type = "radio" name = "genero" value = "masculino" required autofocus> Masculino 
+			 <input type = "radio" name = "genero" value = "feminino" required autofocus> Feminino <br>
+
+			</select> <br><br><br>
+			<!--
+			<center> <hr width = "90%" align = "center" size = "3" color = "#4169E1"> </center><br>
+
+			<img class = "itens" src = "/static/img/captcha_logo.png" alt = "captcha" width = "25"> <span> Captcha </span> <img> <br> <br>
+			<img class = "captcha_teste" src = "/static/img/captcha_image.png" alt = "captcha" width = "100" height = "40"> <br> 
+			<img src = "/static/img/captcha_icone.png" width = "20"> Captcha <input type = "text" name = "captcha" required autofocus> 
+			<br><br><br>
+			-->
+			<center> <input type = "submit" name = "btn-login" value = "Register"> </center>
+		</div>
+	</form>
+</body>
+</html>

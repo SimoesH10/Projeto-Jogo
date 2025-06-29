@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinhas de Rua</title>
+	<link rel = "icon" href = "/static/img/punho-soco.png">
+    <link href = 'https://fonts.googleapis.com/css?family=Open+Sans' rel = 'stylesheet' type = 'text/css'>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    	<body class = "imagem-fundo">
+
+		<!-- *********** CABEÇALHO *********** -->
+		<header class = "cabecalho">
+			 
+			<h1 class = "logo">
+				<a href = "/" title = "Pokémon Online"> Rinhas de Rua </a>
+			</h1>
+		<!--
+			<marquee behavior="alternate" scrollamount="10" direction="left">
+					<a title = "Pokebola"> <img class = "pokebola" src = "/static/img/pokemon_icon.png" width = "50px" heigth = "226px"> </a>
+			</marquee>
+		-->
+
+		</header>
+
+		<!-- *********** MENU-TOPO *********** -->
+		<nav class = "menu">
+			<ul>
+				<li>  <img class = "snorlax-image" src = "/static/img/lutador1.png" width = "138" heigth = "138"> </li>
+				<li> <a href = "/"> Home </a> </li>
+				<li> <a href = "/cadastrar"> Criar Conta </a> </li>
+				<li> <a href = "/downloadGamer"> Download Game </a> </li>
+			</ul>
+
+			<div class = "social-icons">
+				<a href = "https://www.facebook.com" target = "_blank" class = "btn-facebook"> <img src = "/static/img/facebook_icon.png" width = "25"> </a>
+				<a href = "https://www.twitter.com" target = "_blank" class = "btn-twitter"> <img src = "/static/img/twitter_icon.png" width = "30" height = "28"></a>
+					<a href = "https://www.youtube.com" target = "_blank" class = "btn-youtube"> <img src = "/static/img/youtube_icon.png" width = "25" height = "25"> </a>
+			</div>
+		</nav>
+
+		<!-- *********** MENU-DIREITA *********** -->
+		<nav class = "account">	
+			<form action="/logout" method="get">
+				<center> <h2> Bem-vindo ao Rinhas de Rua!</h2> </center>
+				
+				<img class="icone-meowth" src="/static/img/lutador3.png" title="Manusear conta" width="40" height="40">
+
+				<center> <input type="submit" name="btn-login" value="Sair da Conta"> </center>
+
+			</form>
+		</nav>
+
+		<nav class = "menu-direita">
+			<center> <h2> Comunidade </h2> </center><br>
+			<img class = "icone-psyduck" src = "/static/img/lutador2.png" title = "Comunidade" width = "40" height = "40">
+			<div class = "linguagem-icone">
+				<a title = "pt-BR"> <img src = "/static/img/brasil_icone.png" width = "40" height = "40"> </a>
+				<a title = "en-US"> <img src = "/static/img/eua_icone.png" width = "40" height = "40"> </a>
+				<a title = "es-ES"> <img src = "/static/img/espanha_icone.png" width = "40" height = "40"> </a> <br> <br>
+			</div>
+
+			<ul>
+				<li> <a href = "/tutorial"> <img src = "/static/img/controle-cinza.png" width = "20"> Aprenda a jogar </a> </li>
+				<li> <a href = "/mapaJogo"> <img src = "/static/img/controle-cinza.png" width = "20"> Mapa Pokémon </a> </li>
+				<li> <a href = "/ranking"> <img src = "/static/img/controle-cinza.png" width = "20"> Ranking </a> </li>
+			
+				<li> <br> <a href = "/video"> <img src = "/static/img/controle-preto.png" width = "20"> <span> Vídeos <span> </a> </li>
+				<li> <a href = "/forum"> <img src = "/static/img/controle-preto.png" width = "20"> Forum </a> </li> 
+				</ul>
+		</nav>
+
+		<!-- *********** PRINCIPAL *********** -->
+		<main class = "principal">
+
+			<!-- CONTEUDO -->
+
+			<article class = "sobre">
+				<h2> Bem-vindo ao Rinhas de Rua </h2>
+				<img src = "/static/img/logo-rinhas-de-rua.png" alt = "Pokémon Online">
+				    {% if usuario %}
+						<h3>Informações do jogador</h3>
+						<ul>
+							<li><strong>ID:</strong> {{ usuario[0] }}</li>
+							<li><strong>Nome:</strong> {{ usuario[1] }}</li>
+							<li><strong>Conta:</strong> {{ usuario[2] }}</li>
+							<li><strong>Email:</strong> {{ usuario[3] }}</li>
+						</ul>
+					{% else %}
+						<p>Usuário não encontrado.</p>
+					{% endif %}
+				
+			</article>
+
+			<!-- *********** RODAPÉ*********** -->
+			<footer class = "rodape">
+				<p> Rinhas de Rua – Site Oficial BRASIL  
+					Contato: simoesh10@gmail.com  
+
+					Rinhas de Rua é uma propriedade intelectual de Hugo Simões.  
+					Todos os direitos reservados © 2025.  
+					Este é o site oficial brasileiro. Rinhas de Rua não possui afiliação com nenhuma outra empresa ou marca comercial externa.</p>
+			</footer>
+</body>
+</html>
