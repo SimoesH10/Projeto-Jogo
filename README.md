@@ -60,6 +60,11 @@ $ . .venv/bin/activate
 ```bash
 $ pip install Flask
 ```
+## ⚙️❗❗ Instalação do Sqlite3
+
+A biblioteca **Sqlite3** não precisa de **Instalação**
+<a href="https://docs.python.org/3/library/sqlite3.html#" target="_blank">Acesse o site oficial</a>
+
 ---
 ## ⚙🎮 Instalação do PyGame
 
