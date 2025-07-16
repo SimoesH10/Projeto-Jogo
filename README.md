@@ -10,7 +10,7 @@ Este projeto combina um **site de autenticação em Flask** com um **jogo em Pyg
 ## 📷 Demonstração
 
 ### 💻 Tela do Site
-![Tela do Site](./static/img/Logo-RinhasdRua.png)
+![Tela do Site](./static/img/tela-home-site&jogo.png)
 
 ### 🕹️ Tela do Jogo
 ![Tela do Jogo](./static/img/Jogo-RinhadLuta.png)
