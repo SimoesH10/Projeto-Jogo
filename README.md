@@ -10,28 +10,59 @@ Este projeto combina um **site de autenticação em Flask** com um **jogo em Pyg
 ## 📷 Demonstração
 
 ### 💻 Tela do Site
-![Tela do Site](./screenshots/site-login.png)
+![Tela do Site](./static/img/Logo-RinhasdRua.png)
 
 ### 🕹️ Tela do Jogo
-![Tela do Jogo](./screenshots/jogo.png)
+![Tela do Jogo](./static/img/Jogo-RinhadLuta.png)
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
-- 🐍 Python 3
+- 🐍 Python
+- 🛠️ HTML + CSS para o front-end
 - 🌐 Flask
-- 💾 SQLite3 (ou outro banco relacional)
+- 💾 SQLite3
 - 🖼️ Pygame
 - 🧠 Sistema de autenticação
-- 🛠️ HTML + CSS para o front-end
+
 
 ---
 
-## ⚙️ Instalação
-
-### 1. Clone o repositório
+## ⚙️ Crie um ambiente Windowns
 
 ```bash
-git clone https://github.com/seu-usuario/site-e-jogo.git
-cd site-e-jogo
+> mkdir myproject
+> cd myproject
+> py -3 -m venv .venv
+```
+
+## ⚙️ Ative o ambiente Windowns
+
+```bash
+> .venv\Scripts\activate
+
+```
+## ⚙️ Crie um ambiente Linux | Mac
+
+```bash
+$ mkdir myproject
+$ cd myproject
+$ python3 -m venv .venv
+```
+## ⚙️ Ative o ambiente Linux | Mac
+
+```bash
+$ . .venv/bin/activate
+```
+
+## ⚙️ Instalação do Flask
+```bash
+$ pip install Flask
+```
+---
+## ⚙🎮 Instalação do PyGame
+
+```bash
+pip install pygame
+```
