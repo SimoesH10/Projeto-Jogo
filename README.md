@@ -3,7 +3,7 @@
 Este projeto combina um **site de autenticação em Flask** com um **jogo em Pygame**. O usuário precisa criar uma conta e fazer login no site antes de acessar o jogo.
 
 🔒 Somente usuários autenticados podem jogar.  
-🎮 O jogo é construído em Pygame e é lançado diretamente após o login bem-sucedido.
+🎮 O jogo é construído em Pygame que pode ser consumido logo após o login bem-sucedido.
 
 ---
 
@@ -60,10 +60,25 @@ $ . .venv/bin/activate
 ```bash
 $ pip install Flask
 ```
+<a href="https://flask.palletsprojects.com/en/stable/" target="_blank">
+Acesse o site oficial</a>
+
+## Quickstart Flask
+```bash
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+```
+
 ## ⚙️❗❗ Instalação do Sqlite3
 
 A biblioteca **Sqlite3** não precisa de **Instalação**
-<a href="https://docs.python.org/3/library/sqlite3.html#" target="_blank">Acesse o site oficial</a>
+<a href="https://docs.python.org/3/library/sqlite3.html#" target="_blank">
+Acesse o site oficial</a>
 
 ---
 ## ⚙🎮 Instalação do PyGame
@@ -71,3 +86,6 @@ A biblioteca **Sqlite3** não precisa de **Instalação**
 ```bash
 pip install pygame
 ```
+<a href="https://www.pygame.org/docs/" target="_blank">
+Acesse o site oficial</a>
+
