@@ -15,6 +15,9 @@ Este projeto combina um **site de autenticação em Flask** com um **jogo em Pyg
 ### 🕹️ Tela do Jogo
 ![Tela do Jogo](./static/img/Jogo-RinhadLuta.png)
 
+### 🕹️🎮 Como Jogar
+![Imagem Tutorial](./static/img/Tutorial-Jogar.png)
+
 ---
 
 ## 🚀 Tecnologias utilizadas
