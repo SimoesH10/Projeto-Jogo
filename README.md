@@ -75,6 +75,9 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
+
+if __name__ == '__main__':
+    app.run(debug=True)
 ```
 
 ## ⚙️❗❗ Instalação do Sqlite3
@@ -82,6 +85,29 @@ def hello_world():
 A biblioteca **Sqlite3** não precisa de **Instalação**
 <a href="https://docs.python.org/3/library/sqlite3.html#" target="_blank">
 Acesse o site oficial</a>
+
+```bash
+import sqlite3
+
+conn = sqlite3.connect('meu_banco.db')
+cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS usuarios (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nome TEXT NOT NULL,
+        idade INTEGER
+    )
+''')
+cursor.execute("INSERT INTO usuarios (nome, idade) VALUES (?, ?)", ("Alice", 30))
+cursor.execute("INSERT INTO usuarios (nome, idade) VALUES (?, ?)", ("Bob", 25))
+conn.commit()
+cursor.execute("SELECT * FROM usuarios")
+usuarios = cursor.fetchall()
+for usuario in usuarios:
+    print(usuario)
+conn.close()
+```
+
 
 ---
 ## ⚙🎮 Instalação do PyGame
